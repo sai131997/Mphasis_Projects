@@ -1,0 +1,20 @@
+package com.simplelearnprojects.phase1;
+
+class default1 {
+	void data()
+	{
+		int x=3;
+		System.out.println(x);
+	}
+}
+
+public class DefaultAccessModifiers {
+
+	public static void main(String[] args) {
+		default1 d = new default1();
+		d.data();
+		System.out.println("Default Access Modifiers");
+
+	}
+
+}

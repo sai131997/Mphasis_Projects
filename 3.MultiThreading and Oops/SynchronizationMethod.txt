@@ -1,0 +1,74 @@
+package com.simplelearnprojects.multithreadingandoops;
+class Table {
+	public void printTable(int n) throws InterruptedException {
+		
+		synchronized(this) {
+			
+		System.out.println("Printing Table of "+n);
+		for(int i=0;i<=10;i++) {
+			try {
+				Thread.sleep(10);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+			System.out.println(n*i);
+			this.wait(1000);
+		}
+		}
+	}
+
+	
+}
+class MyRunnable1 implements Runnable {
+	Table table;
+	public MyRunnable1(Table t){
+		this.table = t;
+	}
+
+	@Override
+	public void run() {
+		try {
+			table.printTable(10);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}
+class MyRunnable2 implements Runnable {
+	Table table;
+	public MyRunnable2(Table t){
+		this.table = t;
+	}
+
+	@Override
+	public void run() {
+		try {
+			table.printTable(9);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+}
+public class SynchronisationThreads {
+
+	public static void main(String[] args) throws InterruptedException {
+		Table table = new Table();
+		Thread t1 = new Thread(new MyRunnable1(table));
+		Thread t2 = new Thread(new MyRunnable2(table));
+		t1.start();
+		t1.join();
+		t2.start();
+		
+
+	}
+
+}

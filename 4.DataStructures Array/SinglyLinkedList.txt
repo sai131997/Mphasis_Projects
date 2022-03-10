@@ -1,0 +1,45 @@
+package com.simplelearn.phase1projects;
+
+public class SinglyLinkedList {
+	Node head;
+	static class Node {
+		int data;
+		Node next;
+		
+		Node(int data){
+			this.data = data;
+		}
+	}
+	public static SinglyLinkedList insert(SinglyLinkedList list, int data) {
+		Node new_node = new Node(data);
+		if(list.head == null)
+		{
+			list.head = new_node;
+		} else {
+			Node last = list.head;
+			while(last.next != null) {
+				last = last.next;
+			}
+			last.next = new_node;
+		}
+		return list;
+	}
+	public static void printlist(SinglyLinkedList list) {
+		Node temp = list.head;
+		while(temp.next != null) {
+			System.out.println(temp.data+" ");
+			temp = temp.next;
+		}
+		System.out.println(" ");
+	}
+
+	public static void main(String[] args) {
+		SinglyLinkedList list= new SinglyLinkedList();
+		list = SinglyLinkedList.insert(list, 1);
+		list = SinglyLinkedList.insert(list, 2);
+		list = SinglyLinkedList.insert(list, 3);
+		list = SinglyLinkedList.insert(list, 4);
+		SinglyLinkedList.printlist(list);
+	}
+
+}

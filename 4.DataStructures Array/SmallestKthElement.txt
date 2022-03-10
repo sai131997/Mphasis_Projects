@@ -1,0 +1,21 @@
+public class SmallestElement {
+
+	public static void main(String[] args) {
+		int[] arr = { 5,6,8,6,9,6,8};
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+			System.out.println("Enter Kth Element");
+			int k = sc.nextInt();
+			int result = SmallestElement.kthSmallestElement(arr, k);
+			System.out.println("result+" +result);
+		}
+		
+
+	}
+	static int kthSmallestElement(int[] arr, int k)
+	{
+		Array Sort[];
+		return arr[k-1];
+	}
+
+}

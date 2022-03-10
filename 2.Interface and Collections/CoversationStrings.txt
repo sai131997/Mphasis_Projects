@@ -1,0 +1,19 @@
+package com.simplelearnprojects.phase1.assisted;
+
+public class ConversionStrings {
+
+	public static void main(String[] args) {
+		String s = "Hello World";
+		StringBuffer s1 = new StringBuffer(s);
+		System.out.println(s1);
+		System.out.println(s);
+		s1.reverse();
+		System.out.println(s1);
+		s1.reverse();
+		s1.insert(6,"Java ");
+		System.out.println(s1);
+		
+
+	}
+
+}

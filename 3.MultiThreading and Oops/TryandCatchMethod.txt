@@ -1,0 +1,22 @@
+package com.simplelearnprojects.multithreadingandoops;
+
+public class TryandCatchMethod {
+
+	public static void main(String[] args) {
+		int[] arr = new int[8];
+		try
+		{
+			arr[7]=8;
+		}
+		catch(ArrayIndexOutOfBoundsException e)
+		{
+			System.out.println("Array Index Out of Box");
+		}
+		finally
+		{
+			System.out.println("The Array Size is "+arr.length);
+		}
+
+	}
+
+}

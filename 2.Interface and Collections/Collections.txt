@@ -1,0 +1,43 @@
+package com.simplelearnprojects.phase1;
+import java.util.*;
+
+public class Collections {
+	public static void main(String[] args) {
+		System.out.println("Vector Element");
+		Vector<Integer> vec = new Vector<> ();
+		vec.addElement(25);
+		vec.addElement(30);
+		vec.addElement(15);
+		System.out.println(vec);
+		System.out.println("\n");
+		System.out.println("Linked List");
+		LinkedList<String> list1 = new LinkedList<> ();
+		list1.add("Sai");
+		list1.add("Kiran");
+		list1.add("Hi");
+		
+		Iterator<String> list2 = list1.iterator();
+		
+		while(list2.hasNext()) {
+			System.out.println(list2.next());
+		}
+		System.out.println("\n");
+		System.out.println("Hash Set");
+		HashSet<String> hash = new HashSet<> ();
+		hash.add("Sai");
+		hash.add("Kiran");
+		hash.add("Hi");
+		System.out.println(hash);
+		System.out.println("\n");
+		System.out.println("LinkedHash Set");
+		LinkedHashSet<Integer> lh = new LinkedHashSet<> ();
+		lh.add(11);
+		lh.add(13);
+		lh.add(14);
+		System.out.println(lh);
+		
+		
+	}
+
+}
+

@@ -1,0 +1,29 @@
+package com.simplelearnprojects.phase1;
+
+class Employee1{
+	int id;
+	String name;
+
+	Employee1(int i,String s)
+	{
+	id=i;
+	name=s;
+	}
+
+	void display() {
+	System.out.println(id+" "+name);
+	}
+}
+
+public class ConstructorDemo {
+	
+	public static void main(String[] args) {
+
+		Employee1 emp1 = new Employee1(1,"JOGI");
+		Employee1 emp2 = new Employee1(2,"SAI KIRAN");
+		emp1.display();
+		emp2.display();
+		}
+}
+
+

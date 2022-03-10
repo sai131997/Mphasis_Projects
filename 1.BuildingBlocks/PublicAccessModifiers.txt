@@ -1,0 +1,11 @@
+package com.simplelearnprojects.phase1;
+
+public class PublicAccessModifiers extends ddata {
+
+	public static void main(String[] args) {
+		ddata d1 = new ddata();
+		d1.test();
+		System.out.println("Public Data Variable");
+	}
+
+}

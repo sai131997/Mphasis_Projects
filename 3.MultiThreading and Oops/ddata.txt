@@ -1,0 +1,9 @@
+package com.simplelearnprojects.phase1;
+
+public class ddata {
+	public void test() {
+		int z=5;
+		System.out.println(z);
+	}
+
+}

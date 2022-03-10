@@ -1,0 +1,29 @@
+package com.simplelearnprojects.oopsconcpets;
+class vechicle {
+	void run() {
+	System.out.println("Two Wheelers");
+	}
+}
+class bicycle extends vechicle {
+	void run() {
+	System.out.println("Hero");
+	}
+}
+class bike extends vechicle {
+	void run() {
+	System.out.println("Royal Enfield");
+	}
+}
+public class Inheritence1 {
+
+	public static void main(String[] args) {
+		vechicle v = new vechicle();
+		bicycle b = new bicycle();
+		bike b1 = new bike();
+		v.run();
+		b.run();
+		b1.run();
+
+	}
+
+}

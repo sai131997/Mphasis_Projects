@@ -1,0 +1,5 @@
+*  I have import Scanner method from java.util
+*  I have taken public class as ArthematicCalculator and given two integers as input which is given by the user.
+*  I have send the first int to scanner which scans and saves on 'a' integer, same process followed by the second integer 'b'.
+*  Following next I have given all four multiple factors which can be operated at same time.
+

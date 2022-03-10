@@ -1,0 +1,27 @@
+package com.simplelearnprojects.phase1;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class ArrayList1 {
+
+	public static void main(String[] args) {
+		int [] a = new int [3];
+		a[0] = 1;
+		a[1] = 2;
+		a[2] = 3;
+		
+		ArrayList<Integer> arr = new ArrayList<> ();
+		arr.add(2);
+		arr.add(3);
+		arr.add(1);
+		
+		Iterator<Integer> list = arr.iterator();
+		
+		while(list.hasNext()) {
+			System.out.println(list.next());
+		}
+	
+	
+	}
+
+}

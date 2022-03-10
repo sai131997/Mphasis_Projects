@@ -1,0 +1,25 @@
+package com.simplelearnprojects.phase1;
+class Vechicle {
+	void run() {
+		System.out.println("Vechicle is Running");
+	}
+}
+
+class Bike extends Vechicle {
+	void run() {
+		System.out.println("Bike is Running");
+	}
+}
+
+public class CallingMethod {
+
+	public static void main(String[] args) {
+		Vechicle V = new Vechicle();
+		V.run();
+		Bike B = new Bike();
+		B.run();
+		Vechicle V1 = new Bike();
+		V1.run();
+	}
+
+}

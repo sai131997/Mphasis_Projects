@@ -1,0 +1,40 @@
+package com.simplelearn.phase1projects;
+import java.util.Scanner;
+
+public class BinarySearchDemo {
+
+	public static void main(String[] args) {
+		int [] arr = {1,2,3,4,5,6,7,8,9};
+		Scanner sc = new Scanner(System.in);
+		while(true) {
+		System.out.println("Enter the Element to Search for"); 
+		int x = sc.nextInt();
+		int result = BinarySearchDemo.binarysearch(arr,x);
+		if(result<0) {
+			System.out.println("Result not found in Array");
+		}else {
+		System.out.println("Element found in the index of: "+result);
+		}
+		}
+
+	}
+	
+	public static int binarysearch(int[] arr,int x) {
+		int start = 0;
+		int length = arr.length;
+		int mid = (start+length)/2;
+		while(mid <= length) {
+			if(arr[mid] < x) {
+				start= mid+1;
+			} else if(arr[mid]==x) {
+				System.out.println("Found Solution");
+				return mid;
+			} else {
+				length = mid-1;
+			}
+			mid = (start+length)/2;
+		}
+		return mid;
+	}
+}
+

@@ -1,0 +1,17 @@
+package com.simplelearnprojects.phase1.assisted;
+import java.util.regex.*;
+public class RegularExpression {
+
+	public static void main(String[] args) {
+		String pattern = "[A-Z][a-z]+";
+		String check = "Hello Java World 123";
+		
+		Pattern p = Pattern.compile(pattern);
+		Matcher c = p.matcher(check);
+		
+		while(c.find())
+			System.out.println(check.substring(c.start(),c.end()));
+
+	}
+
+}

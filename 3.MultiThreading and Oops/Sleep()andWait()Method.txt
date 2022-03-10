@@ -1,0 +1,17 @@
+package com.simplelearnprojects.multithreadingandoops;
+
+public class SleepandWait  {
+	public static void main (String[] args) throws InterruptedException {
+		Object obj = new Object();
+		{
+			Thread.sleep(1000);
+			System.out.println("Thread "+Thread.currentThread().getName()+" will sleep 1000 milliseconds");
+			synchronized(obj)
+			{
+				obj.wait(1000);
+				System.out.println("Object "+obj+" is woken after waiting for 1 seconds");
+			}
+		}
+	}
+	
+}

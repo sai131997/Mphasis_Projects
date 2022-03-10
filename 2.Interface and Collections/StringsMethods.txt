@@ -1,0 +1,21 @@
+package com.simplelearnprojects.phase1.assisted;
+
+public class StringsMethods {
+
+	public static void main(String[] args) {
+		String s1 = new String("Hello World");
+		System.out.println(s1.length());
+		String sub = new String(s1);
+		System.out.println(sub.substring(3));
+		String s3 = new String("Hi World");
+		System.out.println(s1.compareTo(s3));
+		System.out.println(s1.isEmpty());
+		System.out.println(s1.toLowerCase());
+		System.out.println(s1.toUpperCase());
+		String s4 = "Heldo";
+		String replace = s1.replace('d','l');
+		System.out.println(replace);
+		System.out.println(s1.equals(s3));
+		}
+
+}

@@ -1,0 +1,9 @@
+package com.simplelearnprojects.phase1;
+
+public class cdata {
+	protected int y=3;
+	{
+		System.out.println(y);
+	}
+
+}

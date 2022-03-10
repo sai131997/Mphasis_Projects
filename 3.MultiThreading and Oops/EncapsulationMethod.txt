@@ -1,0 +1,23 @@
+
+package com.simplelearnprojects.oopsconcpets;
+
+class Human {
+	private String Kidney = "Kidney1";
+	
+	public String getKidney() {
+		return Kidney;
+	}
+	public void setKidney(String Kidney) {
+		this.Kidney = Kidney;
+	}
+}
+public class EncapsulationMethod{
+	public static void main(String[] args) {
+				
+		Human h= new Human();
+		System.out.println(h.getKidney());
+		h.setKidney("Kidney");
+		System.out.println(h.getKidney());
+		
+	}
+}

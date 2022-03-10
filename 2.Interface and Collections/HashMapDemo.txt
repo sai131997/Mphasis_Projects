@@ -1,0 +1,47 @@
+package com.simplelearnprojects.phase1;
+
+import java.util.HashMap;
+import java.util.Map;
+import java.util.*;
+
+public class HashMapDemo {
+
+	public static void main(String[] args) {
+		HashMap<Integer, String> hm = new HashMap<>();
+		hm.put(1,"Elon");
+		hm.put(2,"Musk");
+		hm.put(3, "Space X");
+		hm.put(3, "Rocket");
+		hm.put(null, "Lauched");
+		
+		System.out.println("The Element of HashTable are:");
+		for(Map.Entry m: hm.entrySet()) {
+			System.out.println(m.getKey()+" " + m.getValue());
+		}
+		
+		System.out.println("\n");
+		Hashtable<Integer,String> table = new Hashtable<>();
+		table.put(7,"Elon");
+		table.put(8,"Musk");
+		table.put(9, "Space X");
+		table.put(6, "Rocket");
+
+		System.out.println("The Element of Hashmap are:");
+		for(Map.Entry h: table.entrySet()) {
+			System.out.println(h.getKey()+" " + h.getValue());
+		}
+		System.out.println("\n");
+		TreeMap<Integer,String> tree = new TreeMap<>();
+		tree.put(4,"Elon");
+		tree.put(5,"Musk");
+		tree.put(6, "Space X");
+		tree.put(6, "Rocket");
+
+		System.out.println("The Element of Hashmap are:");
+		for(Map.Entry m: tree.entrySet()) {
+			System.out.println(m.getKey()+" " + m.getValue());
+		}
+				
+		}
+
+}

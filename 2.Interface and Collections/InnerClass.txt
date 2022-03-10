@@ -1,0 +1,23 @@
+package com.simplelearnprojects.phase1.assisted;
+
+class OuterClass1 {
+	private String s = "hey";
+	void display() {
+		class InnerClass1 {
+			void msg() {
+				System.out.println(s);
+		}
+		}
+		InnerClass1 inner = new InnerClass1();
+		inner.msg();
+	}
+}
+public class InnerClass {
+
+	public static void main(String[] args) {
+		OuterClass1 outer = new OuterClass1();
+		outer.display();
+
+	}
+
+}

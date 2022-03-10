@@ -1,0 +1,22 @@
+package com.simplelearnprojects.phase1;
+
+class Employee {
+	int id;
+	String name;
+	
+	void display() {
+		System.out.println(id +" "+ name);
+	}
+	
+}
+public class DefaultConstructor {
+
+	public static void main(String[] args) {
+		Employee e1 = new Employee();
+		
+		e1.display();
+		
+
+	}
+
+}

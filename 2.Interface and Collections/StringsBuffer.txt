@@ -1,0 +1,20 @@
+package com.simplelearnprojects.phase1.assisted;
+
+public class StringsBuffer {
+
+	public static void main(String[] args) {
+		StringBuffer s = new StringBuffer("Welcome to java");
+		s.append(" World");
+		System.out.println(s);
+		s.insert(1,'e');
+		System.out.println(s);
+		s.replace(0,5,"hell");
+		System.out.println(s);
+		s.delete(0,2);
+		System.out.println(s);
+		System.out.println(s.insert(0, "Hello World "));
+		System.out.println(s.reverse());
+		
+	}
+
+}

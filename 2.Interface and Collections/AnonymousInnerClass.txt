@@ -1,0 +1,17 @@
+package com.simplelearnprojects.phase1.assisted;
+abstract class Innerclass2{
+	public abstract void display();
+}
+public class AnonymousInnerClass {
+
+	public static void main(String[] args) {
+		Innerclass2 ani = new Innerclass2() {
+		 public void display() {
+			System.out.println("Hey");
+		}
+
+	};
+	ani.display();
+	}
+
+}

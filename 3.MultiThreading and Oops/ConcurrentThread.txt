@@ -1,0 +1,16 @@
+package com.simplelearnprojects.multithreadingandoops;
+
+class MyThread extends Thread {
+	public void display(){
+		System.out.println("Concurrent Thread is running");
+	}
+}
+public class ConcurrentThread {
+
+	public static void main(String[] args) {
+		MyThread t1 = new MyThread();
+		t1.start();
+
+	}
+
+}

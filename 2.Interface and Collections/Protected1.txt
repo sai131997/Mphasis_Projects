@@ -1,0 +1,12 @@
+package com.simplelearnprojects.phase1;
+
+
+public class Protected1 extends cdata {
+
+	public static void main(String[] args) {
+		Protected1 c = new Protected1();
+		System.out.println("Protected Access Modifiers");
+
+	}
+
+}
